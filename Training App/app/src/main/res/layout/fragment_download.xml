@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DownloadFragment"
+    tools:context=".view.DownloadFragment"
     android:padding="40dp">
 
     <LinearLayout
@@ -25,6 +25,7 @@
             android:layout_height="wrap_content"
             android:text="Download"
             android:layout_marginTop="20dp" />
+
     </LinearLayout>
 
 

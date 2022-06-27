@@ -1,24 +1,20 @@
-package com.example.loginactivity;
+package com.example.loginactivity.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager2.widget.ViewPager2;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
-import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.google.android.material.snackbar.BaseTransientBottomBar;
-import com.google.android.material.snackbar.Snackbar;
+import com.example.loginactivity.R;
 import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
 
 public class HomeActivity extends AppCompatActivity {
 
-    Button logout;
+    Button logout, toNbaList;
     TextView username;
 
     TabLayout tabLayout;
@@ -31,16 +27,22 @@ public class HomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_home);
 
         logout = findViewById(R.id.btn_logout);
+        toNbaList = findViewById(R.id.btn_toNbaList);
         username = findViewById(R.id.tv_username);
 
         Intent intent = getIntent();
         String tempUsername = intent.getStringExtra("account_username");
 
-        username.setText(tempUsername);
+//        username.setText(tempUsername);
 
-        logout.setOnClickListener(v -> {
-            Intent logoutIntent = new Intent(HomeActivity.this, LoginActivity.class);
-            startActivity(logoutIntent);
+//        logout.setOnClickListener(v -> {
+//            Intent logoutIntent = new Intent(HomeActivity.this, LoginActivity.class);
+//            startActivity(logoutIntent);
+//        });
+
+        toNbaList.setOnClickListener(view -> {
+            Intent toNbaListIntent = new Intent(HomeActivity.this, NbaActivity.class);
+            startActivity(toNbaListIntent);
         });
 
         tabLayout = findViewById(R.id.tab_layout);

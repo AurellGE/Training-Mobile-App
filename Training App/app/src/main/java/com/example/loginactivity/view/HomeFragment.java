@@ -1,4 +1,4 @@
-package com.example.loginactivity;
+package com.example.loginactivity.view;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -13,6 +13,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.loginactivity.R;
 
 /**
  * A simple {@link Fragment} subclass.

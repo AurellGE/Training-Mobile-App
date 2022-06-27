@@ -1,4 +1,4 @@
-package com.example.loginactivity;
+package com.example.loginactivity.view;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;

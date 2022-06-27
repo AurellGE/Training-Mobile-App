@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Training Mobile App</string>
+    <string-array name="numbers">
+        <item>Kaeya</item>
+        <item>Vayne</item>
+        <item>Childe</item>
+        <item>Nero</item>
+        <item>Dain</item>
+        <item>Otto</item>
+        <item>Su</item>
+    </string-array>
+</resources>

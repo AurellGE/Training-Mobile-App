@@ -21,9 +21,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="12dp"
-        android:layout_marginVertical="8dp"
+        android:layout_marginTop="8dp"
         android:fontFamily="@font/lato_regular"
         android:text="Offline Mode"
+        app:layout_constraintBottom_toTopOf="@id/btn_toHome"/>
+
+    <Button
+        android:id="@+id/btn_toHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/lato_regular"
+        android:text="Back To Home Page"
         app:layout_constraintBottom_toBottomOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

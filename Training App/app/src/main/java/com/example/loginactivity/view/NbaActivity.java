@@ -4,7 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Button;
 
 import com.example.loginactivity.databinding.ActivityNbaBinding;
 import com.example.loginactivity.viewModel.NbaViewModel;
@@ -28,6 +30,11 @@ public class NbaActivity extends AppCompatActivity {
         mBinding.rvNbateams.setLayoutManager(new LinearLayoutManager(this));
         mNbaViewModel.getNbaTeamItems().observe(this, nbaTeamItemsName -> {
             mBinding.rvNbateams.setAdapter(new NbaTeamsAdapter(nbaTeamItemsName));
+        });
+
+        mBinding.btnToHome.setOnClickListener(view -> {
+            Intent toHomeIntent = new Intent(NbaActivity.this, HomeActivity.class);
+            startActivity(toHomeIntent);
         });
     }
 }
